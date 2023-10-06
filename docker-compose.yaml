@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+ docker-mysql-demo-h2:
+    image: rohin4u03/docker-h2-docker_mysql_demo:0.0.1-SNAPSHOT
+
+    mem_limit: 700m
+    ports:
+      - "9004:9003"
+    networks:
+      - h2-docker  
+ 
+networks:
+    h2-docker:        
+         
+          
